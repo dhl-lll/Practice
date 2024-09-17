@@ -1,0 +1,24 @@
+---
+title: "Assignment1RMarkdown"
+author: "Helena"
+date: "2024-09-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Wave plot
+
+```{r}
+x<-seq(0,20,0.01)
+y<-sin(x)
+sin_df<-data.frame(x,y)
+head(sin_df,3)
+```
+
+```{r sin_df}
+plot(sin_df)
+```
+
+\[\sin(x){^2}+\cos(x){^2}=1\]
